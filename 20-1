@@ -1,0 +1,47 @@
+//function basic (even odd)
+#include <iostream>
+using namespace std;
+
+void even_odd(int a)
+{
+int b;
+cout<<"Enter the number : ";
+cin>>b;
+if (b%2==0)
+{
+cout<<"This is an even number";
+}
+else
+{
+cout<<"This is an odd number";
+}
+}
+int main()
+{
+int b;
+even_odd(b);
+return 0;
+}
+
+
+//return value function
+#include <iostream>
+using namespace std;
+
+int largest(int a,int b,int c){
+int d;
+if(a>b&&a>c)
+d=a;
+else if(b>c&&b>a)
+d=b;
+else
+d=c;
+return c; 
+}
+int main(){
+    int a,b,c;
+       cin>>a>>b>>c;
+       int great=largest(a,b,c);
+       cout<<"largest is: "<<great;
+return 0;
+}
